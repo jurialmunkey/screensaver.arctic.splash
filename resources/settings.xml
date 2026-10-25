@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8'?>
+<settings version="1">
+    <section id="screensaver.arctic.splash">
+        <category id="scenes" label="32000">
+            <group id="1">
+                <setting id="season.mode" type="string" label="32001" help="32002">
+                    <level>0</level>
+                    <default>auto</default>
+                    <constraints>
+                        <options>
+                            <option label="32003">auto</option>
+                            <option label="32004">current</option>
+                            <option label="32005">random</option>
+                            <option label="32006">specific</option>
+                        </options>
+                    </constraints>
+                    <control type="spinner" format="string" />
+                </setting>
+                <setting id="season.state" type="string" label="32007" help="32002">
+                    <level>0</level>
+                    <default>summer</default>
+                    <constraints>
+                        <options>
+                            <option label="32008">summer</option>
+                            <option label="32009">autumn</option>
+                            <option label="32010">winter</option>
+                            <option label="32011">spring</option>
+                        </options>
+                    </constraints>
+                    <dependencies>
+                        <dependency type="visible">
+                            <condition operator="is" setting="season.mode">specific</condition>
+                        </dependency>
+                    </dependencies>
+                    <control type="spinner" format="string" />
+                </setting>
+                <setting id="scene.mode" type="string" label="32012" help="32013">
+                    <level>0</level>
+                    <default>auto</default>
+                    <constraints>
+                        <options>
+                            <option label="32003">auto</option>
+                            <option label="32005">random</option>
+                            <option label="32006">specific</option>
+                        </options>
+                    </constraints>
+                    <control type="spinner" format="string" />
+                </setting>
+                <setting id="scene.state" type="string" label="32014" help="32013">
+                    <level>0</level>
+                    <default>fuji</default>
+                    <constraints>
+                        <options>
+                            <option label="32015">fuji</option>
+                            <option label="32016">countryside</option>
+                            <option label="32017">tokyo</option>
+                        </options>
+                    </constraints>
+                    <dependencies>
+                        <dependency type="visible">
+                            <condition operator="is" setting="scene.mode">specific</condition>
+                        </dependency>
+                    </dependencies>
+                    <control type="spinner" format="string" />
+                </setting>
+                <setting id="time.mode" type="string" label="32018" help="32019">
+                    <level>0</level>
+                    <default>auto</default>
+                    <constraints>
+                        <options>
+                            <option label="32003">auto</option>
+                            <option label="32004">current</option>
+                            <option label="32005">random</option>
+                            <option label="32006">specific</option>
+                        </options>
+                    </constraints>
+                    <control type="spinner" format="string" />
+                </setting>
+                <setting id="time.state" type="string" label="32020" help="32019">
+                    <level>0</level>
+                    <default>0000</default>
+                    <constraints>
+                        <options>
+                            <option label="32021">0000</option>
+                            <option label="32022">0100</option>
+                            <option label="32023">0200</option>
+                            <option label="32024">0300</option>
+                            <option label="32025">0400</option>
+                            <option label="32026">0500</option>
+                            <option label="32027">0600</option>
+                            <option label="32028">0700</option>
+                            <option label="32029">0800</option>
+                            <option label="32030">0900</option>
+                            <option label="32031">1000</option>
+                            <option label="32032">1100</option>
+                            <option label="32033">1200</option>
+                            <option label="32034">1300</option>
+                            <option label="32035">1400</option>
+                            <option label="32036">1500</option>
+                            <option label="32037">1600</option>
+                            <option label="32038">1700</option>
+                            <option label="32039">1800</option>
+                            <option label="32040">1900</option>
+                            <option label="32041">2000</option>
+                            <option label="32042">2100</option>
+                            <option label="32043">2200</option>
+                            <option label="32044">2300</option>
+                        </options>
+                    </constraints>
+                    <dependencies>
+                        <dependency type="visible">
+                            <condition operator="is" setting="time.mode">specific</condition>
+                        </dependency>
+                    </dependencies>
+                    <control type="spinner" format="string" />
+                </setting>
+                <setting id="weather.mode" type="string" label="32045" help="32046">
+                    <level>0</level>
+                    <default>auto</default>
+                    <constraints>
+                        <options>
+                            <option label="32003">auto</option>
+                            <option label="32004">current</option>
+                            <option label="32005">random</option>
+                            <option label="32006">specific</option>
+                        </options>
+                    </constraints>
+                    <control type="spinner" format="string" />
+                </setting>
+                <setting id="weather.state" type="string" label="32047" help="32046">
+                    <level>0</level>
+                    <default>clear</default>
+                    <constraints>
+                        <options>
+                            <option label="32048">clear</option>
+                            <option label="32049">partlycloudy</option>
+                            <option label="32050">cloud</option>
+                            <option label="32051">windy</option>
+                            <option label="32052">rain</option>
+                            <option label="32053">heavyrain</option>
+                            <option label="32054">snow</option>
+                            <option label="32055">thunderstorm</option>
+                            <option label="32056">severethunderstorm</option>
+                            <option label="32057">hazy</option>
+                        </options>
+                    </constraints>
+                    <dependencies>
+                        <dependency type="visible">
+                            <condition operator="is" setting="weather.mode">specific</condition>
+                        </dependency>
+                    </dependencies>
+                    <control type="spinner" format="string" />
+                </setting>
+            </group>
+        </category>
+    </section>
+</settings>
