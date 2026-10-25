@@ -2715,12 +2715,6 @@
                         </control>
                     </control>
                 </control>
-                <control type="image">
-                    <texture colordiffuse="7f000000" background="true">special://home/addons/screensaver.arctic.splash/resources/media/white.png</texture>
-                    <visible>[Integer.IsGreater(Window.Property(ArcticSplash.Hour),599) + Integer.IsLess(Window.Property(ArcticSplash.Hour),1800)]</visible>
-                    <width>1920</width>
-                    <height>1080</height>
-                </control>
             </control>
         </control>
         <control type="group">
@@ -5339,12 +5333,6 @@
                         </control>
                     </control>
                 </control>
-            </control>
-            <control type="image">
-                <texture colordiffuse="7f000000" background="true">special://home/addons/screensaver.arctic.splash/resources/media/white.png</texture>
-                <visible>[[Integer.IsGreater(Window.Property(ArcticSplash.Hour),599) + Integer.IsLess(Window.Property(ArcticSplash.Hour),1800)]]</visible>
-                <width>1920</width>
-                <height>1080</height>
             </control>
         </control>
         <control type="group">
@@ -8351,12 +8339,6 @@
                         </control>
                     </control>
                 </control>
-            </control>
-            <control type="image">
-                <texture colordiffuse="7f000000" background="true">special://home/addons/screensaver.arctic.splash/resources/media/white.png</texture>
-                <visible>[[Integer.IsGreater(Window.Property(ArcticSplash.Hour),599) + Integer.IsLess(Window.Property(ArcticSplash.Hour),1800)]]</visible>
-                <width>1920</width>
-                <height>1080</height>
             </control>
         </control>
     </controls>

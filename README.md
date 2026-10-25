@@ -42,6 +42,9 @@ rendering needs neither the source skin nor SkinVariables. Window-local
 properties provide live state and texture aliases. All Python belongs to this
 standalone screensaver add-on.
 
+The startup splash's daytime text-readability dim layer is omitted from all
+three screensaver scenes. Keep this exclusion when regenerating the renderer.
+
 `resources/renderer-sources.json` records the source skin version and hashes.
 The adjacent offline `export_splash.py` and `build_splash.py` files rebuild the
 renderer/settings/package; they are outside the distributable add-on. Run both
